@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Integration Test</title>
+    </head>
+    <body style="font-family: sans-serif;">
+        <h1>Test page</h1>
+        <p>Some contents</p>
+        <p id="debug"></p>
+        <script>
+            TabeeConfig = {
+                position: 'bottom',
+                new_tab: 'true',
+                icon_fit: 'contain',
+                subject_text: 'Example',
+                subline_text: 'To show you how it works',
+                debug: true,
+                adgroup_join: 'utm_campaign|utm_term'
+            };
+            var d=document,b=d.createElement('script');b.src='base.js';d.head.appendChild(b);
+        </script>
+    </body>
+</html>
